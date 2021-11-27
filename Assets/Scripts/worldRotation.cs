@@ -29,12 +29,9 @@ public class worldRotation : MonoBehaviour
             float zRotation = gameObject.transform.localRotation.eulerAngles.z;
             
             if(rotateLeft) {
-                Debug.Log("left");
+
                 if(Mathf.Abs(zRotation - currentRotation) < rotateFactor) {
-                    Debug.Log("rotating");
-                    Debug.Log("current rotation is: " + currentRotation);
-                    Debug.Log("z rotation is: " + zRotation);
-                    Debug.Log("left diff is: " + (currentRotation - zRotation));
+
                     gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, zRotation + 1f * 10f * Time.deltaTime);
                 } else {
                     currentRotation = zRotation;
@@ -44,15 +41,17 @@ public class worldRotation : MonoBehaviour
                 }
                 
             } else {
-                Debug.Log("right");
                 if(Mathf.Abs(currentRotation - zRotation) < rotateFactor) {
-                    Debug.Log("rotating");
+                    Debug.Log("right in if");
                     Debug.Log("current rotation is: " + currentRotation);
-                    Debug.Log("z rotation is: " + zRotation);
-                    Debug.Log("right diff is: " + (currentRotation - zRotation));
+                    Debug.Log("zRotation rotation is: " + currentRotation);
+                    Debug.Log("dif is: " + Mathf.Abs(currentRotation - zRotation));
                     gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, zRotation - 1f * 10f * Time.deltaTime);
+                    if(currentRotation == 0f || currentRotation < 0.1f && currentRotation > -0.1f) {
+                        currentRotation = 360f;
+                    }
                 } else {
-                    Debug.Log("going in else now");
+                    Debug.Log("right in else");
                     currentRotation = zRotation;
                     gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, currentRotation);
                     isRotating = false;

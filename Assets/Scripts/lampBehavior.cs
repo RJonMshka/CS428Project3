@@ -7,16 +7,12 @@ public class lampBehavior : MonoBehaviour
 
     private bool isLampGrabbed;
     public GameObject LampLight;
+    public AudioSource OnSound;
+    public AudioSource OffSound;
     // Start is called before the first frame update
     void Start()
     {
         isLampGrabbed = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void setLampGrabbed(bool status) {
@@ -26,12 +22,18 @@ public class lampBehavior : MonoBehaviour
     public void turnOnLight() {
         if(isLampGrabbed) {
             LampLight.SetActive(true);
+            if(!OnSound.isPlaying) {
+                OnSound.Play();
+            }
         }
     }
 
     public void turnOffLight() {
         if(isLampGrabbed) {
             LampLight.SetActive(false);
+            if(!OffSound.isPlaying) {
+                OffSound.Play();
+            }
         }
     }
 
