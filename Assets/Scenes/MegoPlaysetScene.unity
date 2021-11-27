@@ -1974,18 +1974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbaf3558ca247b54c95c270c714485be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &67501582 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2764921036224818953, guid: 0b5f198c853b9794680bf089e64daf28,
-    type: 3}
-  m_PrefabInstance: {fileID: 1282690514}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fd299fedf620074b8e4ce0978a7f425, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &68629838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5406743248307111831, guid: 1bb7642ebf8d0a34aa23fc586ea87e6a,
@@ -2987,15 +2975,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -7956,7 +7944,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1488951298}
-  - {fileID: 529701376}
   - {fileID: 1286861125}
   m_Father: {fileID: 1978742071}
   m_RootOrder: 8
@@ -9979,15 +9966,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -10957,7 +10944,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5cb01b6982abb44acac6be55e851532c, type: 2}
+  - {fileID: 2100000, guid: 81ebecb1b4d1c2747ab7cd3e8654194c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13842,12 +13829,12 @@ PrefabInstance:
     - target: {fileID: 638635931604789042, guid: ea66dad371718d146886df2d98978ac3,
         type: 3}
       propertyPath: m_Pitch
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 638635931604789042, guid: ea66dad371718d146886df2d98978ac3,
         type: 3}
       propertyPath: MaxDistance
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 638635931604789042, guid: ea66dad371718d146886df2d98978ac3,
         type: 3}
@@ -16007,12 +15994,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529701375}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.037, y: -0.729, z: -1.869098}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.49991274, y: 0.49991274, z: 0.50008726, w: 0.50008726}
+  m_LocalPosition: {x: -0.00001808051, y: -0.0061610937, z: 0.0027906403}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
-  m_Father: {fileID: 293545165}
-  m_RootOrder: 1
+  m_Father: {fileID: 562048724}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &529701377
 AudioSource:
@@ -16027,15 +16014,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b5a5e14c500700c42a4958d7b94caeed, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.729
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 256
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.0990099
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -16653,6 +16640,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0040412243, y: 0.0048447284, z: 0.006507455}
   m_Center: {x: -0.00001287818, y: 0.00054710015, z: -0.0005231586}
+--- !u!4 &562048724 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 10a84a010cd98144aaf26c0b9463a5c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 562048721}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &562494285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17463,15 +17456,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.0990099
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -21572,6 +21565,18 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &739000026 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2764921036523511018, guid: 0b5f198c853b9794680bf089e64daf28,
+    type: 3}
+  m_PrefabInstance: {fileID: 1282690514}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd299fedf620074b8e4ce0978a7f425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &741957430
 GameObject:
   m_ObjectHideFlags: 0
@@ -24301,6 +24306,18 @@ Transform:
   m_Father: {fileID: 2123042064}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &838896206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4662477767941371364, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1044898162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f374290a390ec5f46882b6c06f914834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &839806942
 GameObject:
   m_ObjectHideFlags: 0
@@ -24655,15 +24672,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -25598,15 +25615,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.0990099
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -26173,6 +26190,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbaf3558ca247b54c95c270c714485be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &908299895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7774344186399642229, guid: 1bb7642ebf8d0a34aa23fc586ea87e6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1488951297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &911031575
 GameObject:
   m_ObjectHideFlags: 0
@@ -26987,7 +27010,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5cb01b6982abb44acac6be55e851532c, type: 2}
+  - {fileID: 2100000, guid: 81ebecb1b4d1c2747ab7cd3e8654194c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29764,15 +29787,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -34374,7 +34397,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2a912ed49bf901b4093934bf9a9f972b, type: 2}
+  - {fileID: 2100000, guid: 58dbd5303d76eab43bf2ec54aa1db44f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35521,7 +35544,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5cb01b6982abb44acac6be55e851532c, type: 2}
+  - {fileID: 2100000, guid: 81ebecb1b4d1c2747ab7cd3e8654194c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37437,7 +37460,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5cb01b6982abb44acac6be55e851532c, type: 2}
+  - {fileID: 2100000, guid: 81ebecb1b4d1c2747ab7cd3e8654194c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37712,7 +37735,7 @@ PrefabInstance:
     - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
         type: 3}
       propertyPath: elements.Array.size
-      value: 62
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
         type: 3}
@@ -38026,6 +38049,46 @@ PrefabInstance:
       propertyPath: elements.Array.data[61]
       value: 
       objectReference: {fileID: 117463457}
+    - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
+        type: 3}
+      propertyPath: elements.Array.data[62]
+      value: 
+      objectReference: {fileID: 908299895}
+    - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
+        type: 3}
+      propertyPath: elements.Array.data[63]
+      value: 
+      objectReference: {fileID: 646529571}
+    - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
+        type: 3}
+      propertyPath: elements.Array.data[64]
+      value: 
+      objectReference: {fileID: 1175017632}
+    - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
+        type: 3}
+      propertyPath: elements.Array.data[65]
+      value: 
+      objectReference: {fileID: 908299895}
+    - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
+        type: 3}
+      propertyPath: elements.Array.data[66]
+      value: 
+      objectReference: {fileID: 908299895}
+    - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
+        type: 3}
+      propertyPath: elements.Array.data[67]
+      value: 
+      objectReference: {fileID: 908299895}
+    - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
+        type: 3}
+      propertyPath: elements.Array.data[68]
+      value: 
+      objectReference: {fileID: 908299895}
+    - target: {fileID: 8680406507566844786, guid: 71fc6f8bc6839244ca08bcfe14432fa3,
+        type: 3}
+      propertyPath: elements.Array.data[69]
+      value: 
+      objectReference: {fileID: 908299895}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71fc6f8bc6839244ca08bcfe14432fa3, type: 3}
 --- !u!114 &1254645049 stripped
@@ -38700,15 +38763,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -39007,7 +39070,7 @@ PrefabInstance:
     - target: {fileID: 2764921037832162238, guid: 0b5f198c853b9794680bf089e64daf28,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2764921037832162239, guid: 0b5f198c853b9794680bf089e64daf28,
         type: 3}
@@ -39156,7 +39219,7 @@ Transform:
   - {fileID: 1873850427}
   - {fileID: 1721521934}
   m_Father: {fileID: 293545165}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294293646 stripped
 GameObject:
@@ -44455,7 +44518,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: c395d03079376b74d9c898fe0e96fd09, type: 2}
-  - {fileID: 2100000, guid: 122665bb097227e499d0f3683b79ff87, type: 2}
+  - {fileID: 2100000, guid: 85818567c8b5f334e954d8148a2f763b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51162,15 +51225,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.0990099
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -52006,15 +52069,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.0990099
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -53631,15 +53694,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -53953,7 +54016,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 90
   DopplerLevel: 1
-  MinDistance: 0.01
+  MinDistance: 0.1
   MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
@@ -56249,15 +56312,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -56526,15 +56589,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.0990099
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -56839,7 +56902,7 @@ PrefabInstance:
     - target: {fileID: 6707005887722074733, guid: 319c9c4cb939912429c7786a67e40f0d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 319c9c4cb939912429c7786a67e40f0d, type: 3}
@@ -57861,15 +57924,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d357ad00f6c171a4f8bd920cbe96d961, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.521
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 107
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -58487,15 +58550,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 9cd05a3cbecd278499c8c84fb1667f2b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.727
-  m_Pitch: 3
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 0.1
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -59663,15 +59726,15 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 21c91614cad0e2d429262c6ad6bcb995, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.691
-  m_Pitch: 1
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0.1
+  MaxDistance: 1.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -65484,8 +65547,8 @@ MonoBehaviour:
   initialValue: 0
   defaultValue: 0
   sources:
-  - {fileID: 67501582}
-  - {fileID: 1253509141}
+  - {fileID: 739000026}
+  - {fileID: 838896206}
   Activated:
     m_PersistentCalls:
       m_Calls:
