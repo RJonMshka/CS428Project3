@@ -39,11 +39,16 @@ public class pagePrint : MonoBehaviour
         GameObject newPage;
 
         newPage = Instantiate(page, spawnTransform.position, spawnTransform.rotation);
-
+        if(gameObject.tag == "megoPlayset") {
+            newPage.transform.localScale = new Vector3(0.03f, 0.03f, 0.03f);
+        } else if(gameObject.tag == "zeroGravity") {
+            newPage.GetComponent<Rigidbody>().useGravity = false;
+        }
         Rigidbody pageRigidbody;
         pageRigidbody = newPage.GetComponent<Rigidbody>();
 
         pageRigidbody.AddForce(transform.forward * pageForce);
+
     }
 
     void UpdateTasks() {

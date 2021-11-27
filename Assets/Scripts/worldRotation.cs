@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class worldRotation : MonoBehaviour
 {
-
-    private float currentRotation;
     private float rotateFactor = 90f;
+    private float rotationDone = 0f;
     private bool rotateLeft;
     private bool rotateRight;   
     private bool rotateWorld; 
@@ -18,8 +17,7 @@ public class worldRotation : MonoBehaviour
         rotateRight = false; 
         rotateWorld = false; 
         isRotating = false;
-        currentRotation = gameObject.transform.localRotation.eulerAngles.z;
-        gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, currentRotation);
+        gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, 0f);
     }
 
     // Update is called once per frame
@@ -29,31 +27,22 @@ public class worldRotation : MonoBehaviour
             float zRotation = gameObject.transform.localRotation.eulerAngles.z;
             
             if(rotateLeft) {
-
-                if(Mathf.Abs(zRotation - currentRotation) < rotateFactor) {
-
+                
+                if(rotationDone < rotateFactor) {
                     gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, zRotation + 1f * 10f * Time.deltaTime);
+                    rotationDone += 1f * 10f * Time.deltaTime;
                 } else {
-                    currentRotation = zRotation;
-                    gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, currentRotation);
+                    rotationDone = 0f;
                     isRotating = false;
                     toggleRotateWorld();
                 }
                 
             } else {
-                if(Mathf.Abs(currentRotation - zRotation) < rotateFactor) {
-                    Debug.Log("right in if");
-                    Debug.Log("current rotation is: " + currentRotation);
-                    Debug.Log("zRotation rotation is: " + currentRotation);
-                    Debug.Log("dif is: " + Mathf.Abs(currentRotation - zRotation));
+                if(rotationDone < rotateFactor) {
                     gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, zRotation - 1f * 10f * Time.deltaTime);
-                    if(currentRotation == 0f || currentRotation < 0.1f && currentRotation > -0.1f) {
-                        currentRotation = 360f;
-                    }
+                    rotationDone += 1f * 10f * Time.deltaTime;
                 } else {
-                    Debug.Log("right in else");
-                    currentRotation = zRotation;
-                    gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, currentRotation);
+                    rotationDone = 0f;
                     isRotating = false;
                     toggleRotateWorld();
                 }
