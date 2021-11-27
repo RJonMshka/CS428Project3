@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DancingOnTheCeilingScene.unity
     guid: d8f1c5b389435414f9e36277c6fb51cf
+  - enabled: 1
+    path: Assets/Scenes/LandOfGiantsScene.unity
+    guid: 59f0746fe5649e944a5e586bee2df0b3
+  - enabled: 1
+    path: Assets/Scenes/ZeroGravityScene.unity
+    guid: 842db07beb63a184a8c0de90a5e214de
   m_configObjects: {}
