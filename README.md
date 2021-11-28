@@ -1,9 +1,14 @@
 # CS - 428 AR/VR and Mixed Reality
-## Project 2 Submission
+## Project 3 Submission
 
 ## Rajat Kumar (UIN: 653922910)
 
-### Theme: Fear of Working in an Office or Returning to the Office
+### This project has 5 Scenes:
+1. Normal Project 2 Classic Scene
+2. Mego Playset Scene
+3. Land of the Giants Scene
+4. Dancing on the Ceiling Scene
+5. Zero Gravity Scene
 
 This Project is based on Unity and VRTK4. Please find the documentation for VRTK4 below:
 
